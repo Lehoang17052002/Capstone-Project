@@ -22,16 +22,16 @@ Dự án Capstone này tập trung vào phát triển hệ thống giám sát v�
 
 # HUƯỚNG DẪN SỬ DỤNG
   ## 1. Phần HMI
-  Bước 1: Bật file GX Work và GT Designer3 . Sau đó tiến hành chạy mô phỏng bể 1 và HMI bơm 1 bể 1
-  Bước 2: Đăng nhập người dùng trên giao diện người dùng HMI
-  Bước 3: Tiến hành kiểm tra thông tin SCADA gửi về và nhấn xác nhân bơm
-  Bước 4: Sau khi bơm xong xác nhân hoàn thành.
+      Bước 1: Bật file GX Work và GT Designer3 . Sau đó tiến hành chạy mô phỏng bể 1 và HMI bơm 1 bể 1
+      Bước 2: Đăng nhập người dùng trên giao diện người dùng HMI
+      Bước 3: Tiến hành kiểm tra thông tin SCADA gửi về và nhấn xác nhân bơm
+      Bước 4: Sau khi bơm xong xác nhân hoàn thành.
   ## 2. Phần SCADA
-  Bước 1: Mở phần mềm Workbench
-  Bước 2: Bật tất cả chức năng của Iconics
-  Bước 3: Mở file main để tiến hành mở giao diện SCADA
-  Bước 4: Quan sát thông tin trạm
-  Bước 5: Truy xuất xe
+      Bước 1: Mở phần mềm Workbench
+      Bước 2: Bật tất cả chức năng của Iconics
+      Bước 3: Mở file main để tiến hành mở giao diện SCADA
+      Bước 4: Quan sát thông tin trạm
+      Bước 5: Truy xuất xe
    
 
 
