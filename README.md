@@ -10,15 +10,15 @@ Dự án Capstone này tập trung vào phát triển hệ thống giám sát v�
 
 
 # Thông tin chung 
-  ## Trường Đại học Bách Khoa – Đại học Đà Nẵng
-  ## Khoa Điện
-  Ngành: Kỹ thuật điều khiển và tự động hóa
-  Đề tài: Giám sát và vận hành hệ thống trạm nhiên liệu
-  Người hướng dẫn: TS. Nguyễn Thị Thanh Quỳnh 
-                   KS. Dương Phú Minh Châu
-  Sinh viên thực hiện
-  Lê Viết Vích – MSSV: 105200395 – 20TDHCLC1
-  Lê Hoàng – MSSV: 105200361 – 20TDHCLC1
+    Trường Đại học Bách Khoa – Đại học Đà Nẵng
+    Khoa Điện
+    Ngành: Kỹ thuật điều khiển và tự động hóa
+    Đề tài: Giám sát và vận hành hệ thống trạm nhiên liệu
+    Người hướng dẫn: TS. Nguyễn Thị Thanh Quỳnh 
+                     KS. Dương Phú Minh Châu
+    Sinh viên thực hiện
+    Lê Viết Vích – MSSV: 105200395 – 20TDHCLC1
+    Lê Hoàng – MSSV: 105200361 – 20TDHCLC1
 
 # HUƯỚNG DẪN SỬ DỤNG
   ## 1. Phần HMI
