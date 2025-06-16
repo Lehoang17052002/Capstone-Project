@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Grid Background="#FFFFFFFF" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:iwm="clr-namespace:Ico.Windows.Media;assembly=IcoWPF" xmlns:gwx="clr-namespace:Ico.Gwx;assembly=GwxRuntimeCore" xmlns:ig="clr-namespace:Ico.Gdx;assembly=GdxViewControl" xmlns:iws="clr-namespace:Ico.WPF.Specialized;assembly=IcoWPFSpecialized" xmlns:igd="clr-namespace:Ico.Gdx.Data;assembly=GdxClientCommon" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:iwc="clr-namespace:Ico.Windows.Controls;assembly=IcoWPF">
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition />
+  </Grid.ColumnDefinitions>
+  <Grid.RowDefinitions>
+    <RowDefinition />
+  </Grid.RowDefinitions>
+  <Grid.Resources>
+    <BitmapImage x:Key="GwxThumbnailImageKey">
+      <iwm:BitmapImageInfo.StreamSource>
+        <iwm:Base64Stream Data="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" />
+      </iwm:BitmapImageInfo.StreamSource>
+    </BitmapImage>
+  </Grid.Resources>
+  <gwx:GwxDocument.GwxDocument>
+    <gwx:GwxDocument FileVersion="10.97.306.00" ScanRate="500" PlatformEditMode="AGWeb" />
+  </gwx:GwxDocument.GwxDocument>
+  <Grid Background="#00FFFFFF" ClipToBounds="True">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="175*" />
+      <RowDefinition Height="200*" />
+      <RowDefinition Height="200*" />
+    </Grid.RowDefinitions>
+    <Grid Background="#00FFFFFF" ClipToBounds="True">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="58*" />
+        <RowDefinition Height="136*" />
+      </Grid.RowDefinitions>
+      <Grid Background="#FFF2F2F2" Margin="2,2,2,2" ClipToBounds="True">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition />
+          <ColumnDefinition />
+          <ColumnDefinition />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition />
+        </Grid.RowDefinitions>
+        <Label FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True">
+          <TextBlock Text="Tên khu" />
+        </Label>
+        <Label FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Grid.Column="1">
+          <TextBlock Text="Tên bồn" />
+        </Label>
+        <Label FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Grid.Column="2">
+          <TextBlock Text="Mức" />
+        </Label>
+        <Label FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Grid.Column="3">
+          <TextBlock Text="Kết nối" />
+        </Label>
+        <Label FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Grid.Column="4">
+          <TextBlock Text="Loại" />
+        </Label>
+        <Label FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Grid.Column="5">
+          <TextBlock Text="Nhiên liệu" />
+        </Label>
+        <Label FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Grid.Column="6">
+          <TextBlock Text="Nước" />
+        </Label>
+        <Label FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Grid.Column="7">
+          <TextBlock Text="Nhiệt độ" />
+        </Label>
+        <Label FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Grid.Column="8">
+          <TextBlock Text="Bơm" />
+        </Label>
+      </Grid>
+      <Grid Background="#FFF2F2F2" Margin="1,1,1,1" ClipToBounds="True" Grid.Row="1">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition />
+          <ColumnDefinition />
+          <ColumnDefinition />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition />
+          <RowDefinition />
+        </Grid.RowDefinitions>
+        <Label Background="{x:Null}" FontFamily="Segoe UI" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" IsTabStop="True" Padding="1,1,1,1" Name="Label1">
+          <TextBlock Text="ARENA0" TextTrimming="CharacterEllipsis" />
+        </Label>
+        <Label Background="{x:Null}" FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Name="Label14" Grid.Column="1">
+          <TextBlock Text="Tank0" />
+        </Label>
+        <Label Background="{x:Null}" FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Name="Label15" Grid.Column="1" Grid.Row="1">
+          <TextBlock Text="Tank1" />
+        </Label>
+        <Ellipse Fill="#FF00B050" Stroke="#FF000000" Name="Ellipse1" Width="38.4" Height="35.2" Grid.Column="3" />
+        <Label Background="{x:Null}" FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Padding="1,1,1,1" Name="Label2" Grid.Column="4">
+          <TextBlock Text="A95" TextTrimming="CharacterEllipsis" />
+        </Label>
+        <Label Background="{x:Null}" FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Padding="1,1,1,1" Name="Label8" Grid.Column="4" Grid.Row="1">
+          <TextBlock Text="A92" TextTrimming="CharacterEllipsis" />
+        </Label>
+        <Label BorderBrush="#FF000000" Background="{x:Null}" Foreground="#FF000000" FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Padding="1,1,1,1" Name="Label6" Grid.Column="5">
+          <gwx:GwxDynamicGroup.GwxDynamicGroup>
+            <gwx:GwxDynamicGroup>
+              <gwx:GwxDynamicGroup.DynamicsList>
+                <gwx:GwxProcessPoint DecimalPlaces="0" PostfixLabel="L" AnimationMode="Analog" DataSource="ac:Gas_station/Arena0/Tank/Tank0/Pump/Litre" />
+              </gwx:GwxDynamicGroup.DynamicsList>
+            </gwx:GwxDynamicGroup>
+          </gwx:GwxDynamicGroup.GwxDynamicGroup>
+          <TextBlock Text="* L" TextTrimming="CharacterEllipsis" />
+        </Label>
+        <Label BorderBrush="#FF000000" Background="{x:Null}" Foreground="#FF000000" FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Padding="1,1,1,1" Name="Label9" Grid.Column="5" Grid.Row="1">
+          <gwx:GwxDynamicGroup.GwxDynamicGroup>
+            <gwx:GwxDynamicGroup>
+              <gwx:GwxDynamicGroup.DynamicsList>
+                <gwx:GwxProcessPoint DecimalPlaces="0" PostfixLabel="L" AnimationMode="Analog" DataSource="ac:Gas_station/Arena0/Tank/Tank1/Pump/Litre" />
+              </gwx:GwxDynamicGroup.DynamicsList>
+            </gwx:GwxDynamicGroup>
+          </gwx:GwxDynamicGroup.GwxDynamicGroup>
+          <TextBlock Text="* L" TextTrimming="CharacterEllipsis" />
+        </Label>
+        <Label BorderBrush="#FF000000" Background="{x:Null}" Foreground="#FF000000" FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Padding="1,1,1,1" Name="Label4" Grid.Column="6">
+          <gwx:GwxDynamicGroup.GwxDynamicGroup>
+            <gwx:GwxDynamicGroup>
+              <gwx:GwxDynamicGroup.DynamicsList>
+                <gwx:GwxProcessPoint DecimalPlaces="0" PostfixLabel="L" AnimationMode="Analog" DataSource="ac:Gas_station/Arena0/Tank/Tank0/Water" />
+              </gwx:GwxDynamicGroup.DynamicsList>
+            </gwx:GwxDynamicGroup>
+          </gwx:GwxDynamicGroup.GwxDynamicGroup>
+          <TextBlock Text="* L" TextTrimming="CharacterEllipsis" />
+        </Label>
+        <Label BorderBrush="#FF000000" Background="{x:Null}" Foreground="#FF000000" FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Padding="1,1,1,1" Name="Label11" Grid.Column="6" Grid.Row="1">
+          <gwx:GwxDynamicGroup.GwxDynamicGroup>
+            <gwx:GwxDynamicGroup>
+              <gwx:GwxDynamicGroup.DynamicsList>
+                <gwx:GwxProcessPoint DecimalPlaces="0" PostfixLabel="L" AnimationMode="Analog" DataSource="ac:Gas_station/Arena0/Tank/Tank1/Water" />
+              </gwx:GwxDynamicGroup.DynamicsList>
+            </gwx:GwxDynamicGroup>
+          </gwx:GwxDynamicGroup.GwxDynamicGroup>
+          <TextBlock Text="* L" TextTrimming="CharacterEllipsis" />
+        </Label>
+        <Label BorderBrush="#FF000000" Background="{x:Null}" Foreground="#FF000000" FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Padding="0,0,0,0" Name="Label7" Grid.Column="7">
+          <gwx:GwxDynamicGroup.GwxDynamicGroup>
+            <gwx:GwxDynamicGroup>
+              <gwx:GwxDynamicGroup.DynamicsList>
+                <gwx:GwxProcessPoint DecimalPlaces="0" PostfixLabel="℃" AnimationMode="Analog" DataSource="ac:Gas_station/Arena0/Tank/Tank0/Temperature" />
+              </gwx:GwxDynamicGroup.DynamicsList>
+            </gwx:GwxDynamicGroup>
+          </gwx:GwxDynamicGroup.GwxDynamicGroup>
+          <TextBlock Text="* ℃" TextTrimming="CharacterEllipsis" />
+        </Label>
+        <Label BorderBrush="#FF000000" Background="{x:Null}" Foreground="#FF000000" FontFamily="Segoe UI" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Padding="0,0,0,0" Name="Label10" Grid.Column="7" Grid.Row="1">
+          <gwx:GwxDynamicGroup.GwxDynamicGroup>
+            <gwx:GwxDynamicGroup>
+              <gwx:GwxDynamicGroup.DynamicsList>
+                <gwx:GwxProcessPoint DecimalPlaces="0" PostfixLabel="℃" AnimationMode="Analog" DataSource="ac:Gas_station/Arena0/Tank/Tank1/Temperature" />
+              </gwx:GwxDynamicGroup.DynamicsList>
+            </gwx:GwxDynamicGroup>
+          </gwx:GwxDynamicGroup.GwxDynamicGroup>
+          <TextBlock Text="* ℃" TextTrimming="CharacterEllipsis" />
+        </Label>
+        <gwx:SmartSymbol Name="Container_KPI_Tank2" Width="65.0382537841797" Height="50.4063348770142" gwx:GwxProperties.Title="KPI Tank 2" gwx:GwxProperties.IsGroup="True" Grid.Column="2">
+          <gwx:SmartSymbol.PropertyDefinitions>
+            <gwx:PropertyDefinition Name="FillColor" PropertyId="53875c54-4012-45b5-ab88-209207c6692f" PropertyType="Brush" Category="General" Description="Style Color">
+              <gwx:PropertyDefinition.DefaultPropertyValue>
+                <SolidColorBrush>#FF00B0F0</SolidColorBrush>
+              </gwx:PropertyDefinition.DefaultPropertyValue>
+            </gwx:PropertyDefinition>
+            <gwx:PropertyDefinition Name="HighLimit" PropertyId="4d0737ae-0aef-4e6c-b05d-ce3646b6275f" PropertyType="StringDataSource" DefaultPropertyValue="100" Category="Limits" Description="High Limit" />
+            <gwx:PropertyDefinition Name="Subtitle" PropertyId="a153259f-6f47-41ee-8130-da22e681dec5" PropertyType="StringDataSource" Value="" Category="General" />
+            <gwx:PropertyDefinition Name="DataSource" PropertyId="65e04d51-f582-427b-a42c-4647f5f6c049" PropertyType="StringDataSource" Value="localsim:sine" Category="Data" />
+            <gwx:PropertyDefinition Name="DecimalPlaces" PropertyId="f082beb0-9947-480f-9843-544ad44e027a" PropertyType="String" DefaultPropertyValue="2" Value="" Category="Data" />
+            <gwx:PropertyDefinition Name="Units" PropertyId="9c9baf7a-d806-434a-bda7-b88bd3601232" PropertyType="StringDataSourceWithTokens" DefaultPropertyValue="ML" Value="ML" Category="Data" />
+          </gwx:SmartSymbol.PropertyDefinitions>
+          <Path Fill="#FF000000" Stroke="{x:Null}" Name="path5">
+            <Path.Data>
+              <PathGeometry FillRule="Nonzero" Figures="M36.2645650843491,9.74665228525851E-08C23.7640203632629,0.000434572509074194 13.0858626656556,2.87042291402518 10.9872479257762,6.79382398357769 9.46388635623552,7.84492104877769 8.3367253495877,9.57368784780605 7.95957069323106,11.6124768657482L7.82488796939774,11.6124768657482 7.82488796939774,33.1680246239251C7.81920585235234,33.1682688345197,7.81440639426555,33.1738167982838,7.80872427722015,33.1741298887893L7.80872427722015,48.3394512669259C7.81377198313895,48.3381550722316,7.81986784657135,48.3407599852401,7.82488796939774,48.3394512669259L7.82488796939774,48.669664692563 7.82488796939774,49.5808050282241 7.82488796939774,50.4063370268645 64.9897705116515,50.4063370268645 64.9897705116515,49.5808050282241 64.9897705116515,48.669664692563 64.9897705116515,48.3088748481221C65.0046653815763,48.3136964419128,65.0230908873357,48.310355766215,65.0382615881851,48.3149801129867L65.0382615881851,33.1802351536541C65.0214359017884,33.1797467324649,65.0068168627888,33.1678680786722,64.9897705116515,33.1679933148745L64.9897705116515,11.6124455566979 64.8442972820501,11.6124455566979C64.4337477756595,9.3847314657025 63.1275062995655,7.53665839850708 61.3856367694226,6.53083949387031 58.9478465735108,2.73039784799933 48.4478703668435,0.000673441608644687 36.2645662447011,4.6081303972656E-06z M10.9333728483988,12.4380079251174L61.9136075003881,12.4380079251174 61.9136075003881,47.2265209693257 10.9333728483988,47.2265209693257 10.9333728483988,12.4380079251174z" />
+            </Path.Data>
+          </Path>
+          <Path Fill="{gwx:SmartBinding Path=(gwx:SmartSymbol.FillColor_53875c54_4012_45b5_ab88_209207c6692f), RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=gwx:SmartSymbol, AncestorLevel=1}}" Stroke="#FF000000" StrokeThickness="0" Name="Path4">
+            <Path.Data>
+              <PathGeometry FillRule="EvenOdd" Figures="M10.9333652163325,12.4380024252826L61.9135998904806,12.4380024252826 61.9135998904806,47.2265149584641 10.9333652163325,47.2265149584641 10.9333652163325,12.4380024252826z" />
+            </Path.Data>
+            <gwx:GwxDynamicGroup.GwxDynamicGroup>
+              <gwx:GwxDynamicGroup>
+                <gwx:GwxDynamicGroup.DynamicsList>
+                  <gwx:GwxSize SizeVertical="True" VerticalAnchor="1" AnimationMode="Analog" DataSource="ac:Gas_station/Arena0/Tank/Tank0/Nhienlieu/Totalfuel" LowLimitSource="0" HighLimitSource="100" />
+                </gwx:GwxDynamicGroup.DynamicsList>
+              </gwx:GwxDynamicGroup>
+            </gwx:GwxDynamicGroup.GwxDynamicGroup>
+          </Path>
+          <Canvas Name="g4808">
+            <Rectangle Fill="#FF000000" Stroke="#FF000000" Width="5.83283" Height="97.009167" RenderTransform="0.387591458080856,0,0,0.364485715010378,-467.218613410825,-82.7918816658236" Canvas.Left="512.243218" Canvas.Top="95.005826" />
+            <Rectangle Fill="#FF000000" Stroke="#FF000000" Width="5.83283" Height="97.009167" RenderTransform="0.387591458080856,0,0,0.364485715010378,-473.805161590486,-82.7918816658241" Canvas.Left="525.596549" Canvas.Top="95.005826" />
+            <Rectangle Fill="#FF000000" Stroke="#FF000000" Width="19.033445" Height="8.288758" RenderTransform="0.387591458080856,0,0,0.364485715010378,-468.014268734377,-83.0789507018486" Canvas.Left="513.856301" Canvas.Top="99.446148" />
+            <Rectangle Fill="#FF000000" Stroke="#FF000000" Width="19.033445" Height="8.288758" RenderTransform="0.387591458080856,0,0,0.364485715010378,-467.80556818068,-83.6537930764414" Canvas.Left="513.433189" Canvas.Top="108.337686" />
+            <Rectangle Fill="#FF000000" Stroke="#FF000000" Width="19.033445" Height="8.288758" RenderTransform="0.387591458080856,0,0,0.364485715010378,-467.80556818068,-84.2338431134345" Canvas.Left="513.433189" Canvas.Top="117.309775" />
+            <Rectangle Fill="#FF000000" Stroke="#FF000000" Width="19.033445" Height="8.288758" RenderTransform="0.387591458080856,0,0,0.364485715010378,-467.80556818068,-84.8138931504271" Canvas.Left="513.433189" Canvas.Top="126.281864" />
+          </Canvas>
+          <Label FontFamily="Segoe UI" FontSize="12" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Padding="1,1,1,1" Name="Label3" Width="63.246964" Height="21.301241" Canvas.Left="0" Canvas.Top="20.558661">
+            <gwx:GwxDynamicGroup.GwxDynamicGroup>
+              <gwx:GwxDynamicGroup>
+                <gwx:GwxDynamicGroup.DynamicsList>
+                  <gwx:GwxProcessPoint DecimalPlaces="0" PostfixLabel="%" AnimationMode="Analog" DataSource="ac:Gas_station/Arena0/Tank/Tank0/Nhienlieu/Totalfuel" />
+                </gwx:GwxDynamicGroup.DynamicsList>
+              </gwx:GwxDynamicGroup>
+            </gwx:GwxDynamicGroup.GwxDynamicGroup>
+            <TextBlock Text="* %" TextTrimming="CharacterEllipsis" />
+          </Label>
+        </gwx:SmartSymbol>
+        <Ellipse Fill="#FF00B050" Stroke="#FF000000" Name="Ellipse2" Width="38.4" Height="35.2" Grid.Column="3" Grid.Row="1" />
+        <Ellipse Fill="#FF00B050" Stroke="#FF000000" Name="Ellipse3" Width="38.4" Height="35.2" Grid.Column="8" />
+        <Ellipse Fill="#FF00B050" Stroke="#FF000000" Name="Ellipse4" Width="38.4" Height="35.2" Grid.Column="8" Grid.Row="1" />
+        <gwx:SmartSymbol Name="Container_KPI_Tank3" Width="65.0382537841797" Height="50.4063339233398" gwx:GwxProperties.Title="KPI Tank 2" gwx:GwxProperties.IsGroup="True" Grid.Column="2" Grid.Row="1">
+          <gwx:SmartSymbol.PropertyDefinitions>
+            <gwx:PropertyDefinition Name="FillColor" PropertyId="53875c54-4012-45b5-ab88-209207c6692f" PropertyType="Brush" Category="General" Description="Style Color">
+              <gwx:PropertyDefinition.DefaultPropertyValue>
+                <SolidColorBrush>#FF00B0F0</SolidColorBrush>
+              </gwx:PropertyDefinition.DefaultPropertyValue>
+            </gwx:PropertyDefinition>
+            <gwx:PropertyDefinition Name="HighLimit" PropertyId="4d0737ae-0aef-4e6c-b05d-ce3646b6275f" PropertyType="StringDataSource" DefaultPropertyValue="100" Category="Limits" Description="High Limit" />
+            <gwx:PropertyDefinition Name="Subtitle" PropertyId="a153259f-6f47-41ee-8130-da22e681dec5" PropertyType="StringDataSource" Value="" Category="General" />
+            <gwx:PropertyDefinition Name="DataSource" PropertyId="65e04d51-f582-427b-a42c-4647f5f6c049" PropertyType="StringDataSource" Value="localsim:sine" Category="Data" />
+            <gwx:PropertyDefinition Name="DecimalPlaces" PropertyId="f082beb0-9947-480f-9843-544ad44e027a" PropertyType="String" DefaultPropertyValue="2" Value="" Category="Data" />
+            <gwx:PropertyDefinition Name="Units" PropertyId="9c9baf7a-d806-434a-bda7-b88bd3601232" PropertyType="StringDataSourceWithTokens" DefaultPropertyValue="ML" Value="ML" Category="Data" />
+          </gwx:SmartSymbol.PropertyDefinitions>
+          <Path Fill="#FF000000" Stroke="{x:Null}" Name="path6">
+            <Path.Data>
+              <PathGeometry FillRule="Nonzero" Figures="M36.2645650843491,9.74665228525851E-08C23.7640203632629,0.000434572509074194 13.0858626656556,2.87042291402518 10.9872479257762,6.79382398357769 9.46388635623552,7.84492104877769 8.3367253495877,9.57368784780605 7.95957069323106,11.6124768657482L7.82488796939774,11.6124768657482 7.82488796939774,33.1680246239251C7.81920585235234,33.1682688345197,7.81440639426555,33.1738167982838,7.80872427722015,33.1741298887893L7.80872427722015,48.3394512669259C7.81377198313895,48.3381550722316,7.81986784657135,48.3407599852401,7.82488796939774,48.3394512669259L7.82488796939774,48.669664692563 7.82488796939774,49.5808050282241 7.82488796939774,50.4063370268645 64.9897705116515,50.4063370268645 64.9897705116515,49.5808050282241 64.9897705116515,48.669664692563 64.9897705116515,48.3088748481221C65.0046653815763,48.3136964419128,65.0230908873357,48.310355766215,65.0382615881851,48.3149801129867L65.0382615881851,33.1802351536541C65.0214359017884,33.1797467324649,65.0068168627888,33.1678680786722,64.9897705116515,33.1679933148745L64.9897705116515,11.6124455566979 64.8442972820501,11.6124455566979C64.4337477756595,9.3847314657025 63.1275062995655,7.53665839850708 61.3856367694226,6.53083949387031 58.9478465735108,2.73039784799933 48.4478703668435,0.000673441608644687 36.2645662447011,4.6081303972656E-06z M10.9333728483988,12.4380079251174L61.9136075003881,12.4380079251174 61.9136075003881,47.2265209693257 10.9333728483988,47.2265209693257 10.9333728483988,12.4380079251174z" />
+            </Path.Data>
+          </Path>
+          <Path Fill="{gwx:SmartBinding Path=(gwx:SmartSymbol.FillColor_53875c54_4012_45b5_ab88_209207c6692f), RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=gwx:SmartSymbol, AncestorLevel=1}}" Stroke="#FF000000" StrokeThickness="0" Name="Path5">
+            <Path.Data>
+              <PathGeometry FillRule="EvenOdd" Figures="M10.9333652163325,12.4380024252826L61.9135998904806,12.4380024252826 61.9135998904806,47.2265149584641 10.9333652163325,47.2265149584641 10.9333652163325,12.4380024252826z" />
+            </Path.Data>
+            <gwx:GwxDynamicGroup.GwxDynamicGroup>
+              <gwx:GwxDynamicGroup>
+                <gwx:GwxDynamicGroup.DynamicsList>
+                  <gwx:GwxSize SizeVertical="True" VerticalAnchor="1" AnimationMode="Analog" DataSource="ac:Gas_station/Arena0/Tank/Tank1/Nhienlieu/Totalfuel" LowLimitSource="0" HighLimitSource="100" />
+                </gwx:GwxDynamicGroup.DynamicsList>
+              </gwx:GwxDynamicGroup>
+            </gwx:GwxDynamicGroup.GwxDynamicGroup>
+          </Path>
+          <Canvas Name="g4809">
+            <Rectangle Fill="#FF000000" Stroke="#FF000000" Width="5.83283" Height="97.009167" RenderTransform="0.387591458080856,0,0,0.364485715010378,-467.218613410825,-82.7918816658236" Canvas.Left="512.243218" Canvas.Top="95.005826" />
+            <Rectangle Fill="#FF000000" Stroke="#FF000000" Width="5.83283" Height="97.009167" RenderTransform="0.387591458080856,0,0,0.364485715010378,-473.805161590486,-82.7918816658241" Canvas.Left="525.596549" Canvas.Top="95.005826" />
+            <Rectangle Fill="#FF000000" Stroke="#FF000000" Width="19.033445" Height="8.288758" RenderTransform="0.387591458080856,0,0,0.364485715010378,-468.014268734377,-83.0789507018486" Canvas.Left="513.856301" Canvas.Top="99.446148" />
+            <Rectangle Fill="#FF000000" Stroke="#FF000000" Width="19.033445" Height="8.288758" RenderTransform="0.387591458080856,0,0,0.364485715010378,-467.80556818068,-83.6537930764414" Canvas.Left="513.433189" Canvas.Top="108.337686" />
+            <Rectangle Fill="#FF000000" Stroke="#FF000000" Width="19.033445" Height="8.288758" RenderTransform="0.387591458080856,0,0,0.364485715010378,-467.80556818068,-84.2338431134345" Canvas.Left="513.433189" Canvas.Top="117.309775" />
+            <Rectangle Fill="#FF000000" Stroke="#FF000000" Width="19.033445" Height="8.288758" RenderTransform="0.387591458080856,0,0,0.364485715010378,-467.80556818068,-84.8138931504271" Canvas.Left="513.433189" Canvas.Top="126.281864" />
+          </Canvas>
+          <Label FontFamily="Segoe UI" FontSize="12" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Padding="1,1,1,1" Name="Label5" Width="63.246964" Height="21.301241" gwx:GwxProperties.Stretch="Uniform" Canvas.Left="0" Canvas.Top="20.558661">
+            <gwx:GwxDynamicGroup.GwxDynamicGroup>
+              <gwx:GwxDynamicGroup>
+                <gwx:GwxDynamicGroup.DynamicsList>
+                  <gwx:GwxProcessPoint DecimalPlaces="0" PostfixLabel="%" AnimationMode="Analog" DataSource="ac:Gas_station/Arena0/Tank/Tank1/Nhienlieu/Totalfuel" />
+                </gwx:GwxDynamicGroup.DynamicsList>
+              </gwx:GwxDynamicGroup>
+            </gwx:GwxDynamicGroup.GwxDynamicGroup>
+            <TextBlock Text="* %" TextTrimming="CharacterEllipsis" LayoutTransform="1.20935093984962,0,0,1.20935093984962,0,0" />
+          </Label>
+        </gwx:SmartSymbol>
+      </Grid>
+    </Grid>
+    <ig:GdxViewControl FileVersion="10.97.306.00" FontFamily="Segoe UI" FontSize="12" Width="Auto" Height="Auto" Grid.Row="1">
+      <ig:GdxViewControl.SubscriptionsRepository>
+        <igd:GdxSubscription Key="691621" Name="{x:Null}">
+          <igd:GdxSubscription.Fields>
+            <igd:GdxDataField IsReadOnly="True" Key="TIMESTAMP_VN" BuiltInType="DateTimeOffset" />
+            <igd:GdxDataField Key="VALUE_A" />
+            <igd:GdxDataField Key="VALUE_B" />
+            <igd:GdxDataField Key="VALUE_C" />
+          </igd:GdxSubscription.Fields>
+          <igd:GdxSubscription.Tags>
+            <s:String>db:testhistorial.TEST4</s:String>
+          </igd:GdxSubscription.Tags>
+        </igd:GdxSubscription>
+      </ig:GdxViewControl.SubscriptionsRepository>
+      <ig:GdxViewControl.Items>
+        <iwc:MultipleTabItem IsSelected="True" Header="Tab">
+          <ig:GdxGridView AutoUpdateSeconds="5" SubscriptionID="691621" Uid="local:GdxView_1">
+            <ig:GdxGridView.Columns>
+              <ig:GdxColumn Key="TIMESTAMP_VN" Format="{x:Null}" Text="TIMESTAMP_VN" IsStar="True" />
+              <ig:GdxColumn Key="VALUE_A" Index="1" Format="{x:Null}" Text="Nhiệt độ" IsStar="True" />
+              <ig:GdxColumn Key="VALUE_B" Index="2" Format="{x:Null}" Text="Nhiên liệu" IsStar="True" />
+              <ig:GdxColumn Key="VALUE_C" Index="3" Format="{x:Null}" Text="Nước" IsStar="True" />
+            </ig:GdxGridView.Columns>
+          </ig:GdxGridView>
+        </iwc:MultipleTabItem>
+      </ig:GdxViewControl.Items>
+    </ig:GdxViewControl>
+    <ig:GdxViewControl FileVersion="10.97.306.00" FontFamily="Segoe UI" FontSize="12" Width="Auto" Height="Auto" Grid.Row="2">
+      <ig:GdxViewControl.SubscriptionsRepository>
+        <igd:GdxSubscription Key="691621" Name="{x:Null}">
+          <igd:GdxSubscription.Fields>
+            <igd:GdxDataField IsReadOnly="True" Key="TIMESTAMP_VN" BuiltInType="DateTimeOffset" />
+            <igd:GdxDataField Key="VALUE_A" />
+            <igd:GdxDataField Key="VALUE_B" />
+            <igd:GdxDataField Key="VALUE_C" />
+          </igd:GdxSubscription.Fields>
+          <igd:GdxSubscription.Tags>
+            <s:String>db:testhistorial.HISTORYARENA0</s:String>
+          </igd:GdxSubscription.Tags>
+        </igd:GdxSubscription>
+      </ig:GdxViewControl.SubscriptionsRepository>
+      <ig:GdxViewControl.Items>
+        <iwc:MultipleTabItem IsSelected="True" Header="Tab">
+          <ig:GdxGridView AutoUpdateSeconds="5" SubscriptionID="691621" Uid="local:GdxView_1">
+            <ig:GdxGridView.Columns>
+              <ig:GdxColumn Key="TIMESTAMP_VN" Format="{x:Null}" Text="TIMESTAMP_VN" IsStar="True" />
+              <ig:GdxColumn Key="VALUE_A" Index="1" Format="{x:Null}" Text="Nhiệt độ" IsStar="True" />
+              <ig:GdxColumn Key="VALUE_B" Index="2" Format="{x:Null}" Text="Nhiên liệu" IsStar="True" />
+              <ig:GdxColumn Key="VALUE_C" Index="3" Format="{x:Null}" Text="Nước" IsStar="True" />
+            </ig:GdxGridView.Columns>
+          </ig:GdxGridView>
+        </iwc:MultipleTabItem>
+      </ig:GdxViewControl.Items>
+    </ig:GdxViewControl>
+  </Grid>
+</Grid>

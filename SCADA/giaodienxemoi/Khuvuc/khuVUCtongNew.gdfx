@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Grid Background="#FFFFFFFF" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:iwm="clr-namespace:Ico.Windows.Media;assembly=IcoWPF" xmlns:gwx="clr-namespace:Ico.Gwx;assembly=GwxRuntimeCore" xmlns:ig="clr-namespace:Ico.Gwx;assembly=GwxRuntimeViewControl" xmlns:gwxcmd="clr-namespace:Ico.Gwx;assembly=GwxRuntimeCoreCommands">
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition />
+  </Grid.ColumnDefinitions>
+  <Grid.RowDefinitions>
+    <RowDefinition />
+  </Grid.RowDefinitions>
+  <Grid.Resources>
+    <BitmapImage x:Key="GwxThumbnailImageKey">
+      <iwm:BitmapImageInfo.StreamSource>
+        <iwm:Base64Stream Data="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" />
+      </iwm:BitmapImageInfo.StreamSource>
+    </BitmapImage>
+  </Grid.Resources>
+  <gwx:GwxDocument.GwxDocument>
+    <gwx:GwxDocument FileVersion="10.97.306.00" IsScalable="True" PreferredStretch="Fill" MaximumZoom="13" ScanRate="500" />
+  </gwx:GwxDocument.GwxDocument>
+  <Grid Background="#00FFFFFF" ClipToBounds="True">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="502*" />
+    </Grid.RowDefinitions>
+    <ig:GwxRuntimeViewControl AutoStartRuntime="True" SpecifyScrollBarColors="False" Background="#FFFFFFFF" FontFamily="Segoe UI" FontSize="12" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Name="mainn" Grid.Row="2" />
+    <Grid Background="#FFF2F2F2" ClipToBounds="True" Canvas.Left="0" Canvas.Top="0">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="120" />
+        <ColumnDefinition Width="604*" />
+        <ColumnDefinition Width="120" />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <Label FontFamily="Segoe UI" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Grid.Column="1">
+        <TextBlock Text="GIAO DIỆN KHU VỰC TRẠM XĂNG" />
+      </Label>
+    </Grid>
+    <Grid Background="#FFD8D8D8" Height="28.8" ClipToBounds="True" Grid.Row="1">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition />
+      </Grid.RowDefinitions>
+      <Label Background="#00FFFFFF" FontFamily="Segoe UI" FontSize="12" HorizontalContentAlignment="Center" IsTabStop="True" Name="Label1">
+        <gwx:GwxDynamicGroup.GwxDynamicGroup>
+          <gwx:GwxDynamicGroup>
+            <gwx:GwxDynamicGroup.DynamicsList>
+              <gwx:GwxPick LeftMouseButton="True" ExecuteOnUp="True" InitialClick="True" Control="True">
+                <gwx:GwxPick.CommandParameters>
+                  <gwxcmd:LoadDisplayCommand FileName="Arena0.gdfx" TargetType="Embedded" TargetName="mainn" />
+                </gwx:GwxPick.CommandParameters>
+              </gwx:GwxPick>
+            </gwx:GwxDynamicGroup.DynamicsList>
+          </gwx:GwxDynamicGroup>
+        </gwx:GwxDynamicGroup.GwxDynamicGroup>
+        <TextBlock Text="ARENA0" />
+      </Label>
+      <Label Background="#00FFFFFF" FontFamily="Segoe UI" FontSize="12" HorizontalContentAlignment="Center" IsTabStop="True" Name="Label2" Grid.Column="1">
+        <gwx:GwxDynamicGroup.GwxDynamicGroup>
+          <gwx:GwxDynamicGroup>
+            <gwx:GwxDynamicGroup.DynamicsList>
+              <gwx:GwxPick LeftMouseButton="True" ExecuteOnUp="True" InitialClick="True" Control="True">
+                <gwx:GwxPick.CommandParameters>
+                  <gwxcmd:LoadDisplayCommand FileName="khuvuc.gdfx" TargetType="Embedded" TargetName="mainn" />
+                </gwx:GwxPick.CommandParameters>
+              </gwx:GwxPick>
+            </gwx:GwxDynamicGroup.DynamicsList>
+          </gwx:GwxDynamicGroup>
+        </gwx:GwxDynamicGroup.GwxDynamicGroup>
+        <TextBlock Text="ARENA1" />
+      </Label>
+      <Label Background="#00FFFFFF" FontFamily="Segoe UI" FontSize="12" HorizontalContentAlignment="Center" IsTabStop="True" Name="Label3" Grid.Column="2">
+        <gwx:GwxDynamicGroup.GwxDynamicGroup>
+          <gwx:GwxDynamicGroup>
+            <gwx:GwxDynamicGroup.DynamicsList>
+              <gwx:GwxPick LeftMouseButton="True" ExecuteOnUp="True" InitialClick="True" Control="True">
+                <gwx:GwxPick.CommandParameters>
+                  <gwxcmd:LoadDisplayCommand FileName="Arena2.gdfx" TargetType="Embedded" TargetName="mainn" />
+                </gwx:GwxPick.CommandParameters>
+              </gwx:GwxPick>
+            </gwx:GwxDynamicGroup.DynamicsList>
+          </gwx:GwxDynamicGroup>
+        </gwx:GwxDynamicGroup.GwxDynamicGroup>
+        <TextBlock Text="ARENA2" />
+      </Label>
+      <Label Background="#00FFFFFF" FontFamily="Segoe UI" FontSize="12" HorizontalContentAlignment="Center" IsTabStop="True" Name="Label4" Grid.Column="3">
+        <gwx:GwxDynamicGroup.GwxDynamicGroup>
+          <gwx:GwxDynamicGroup>
+            <gwx:GwxDynamicGroup.DynamicsList>
+              <gwx:GwxPick LeftMouseButton="True" ExecuteOnUp="True" InitialClick="True" Control="True">
+                <gwx:GwxPick.CommandParameters>
+                  <gwxcmd:LoadDisplayCommand FileName="Arena3.gdfx" TargetType="Embedded" TargetName="mainn" />
+                </gwx:GwxPick.CommandParameters>
+              </gwx:GwxPick>
+            </gwx:GwxDynamicGroup.DynamicsList>
+          </gwx:GwxDynamicGroup>
+        </gwx:GwxDynamicGroup.GwxDynamicGroup>
+        <TextBlock Text="ARENA3" />
+      </Label>
+      <Label Background="#00FFFFFF" FontFamily="Segoe UI" FontSize="12" HorizontalContentAlignment="Center" IsTabStop="True" Name="Label5" Grid.Column="4">
+        <gwx:GwxDynamicGroup.GwxDynamicGroup>
+          <gwx:GwxDynamicGroup>
+            <gwx:GwxDynamicGroup.DynamicsList>
+              <gwx:GwxPick LeftMouseButton="True" ExecuteOnUp="True" InitialClick="True" Control="True">
+                <gwx:GwxPick.CommandParameters>
+                  <gwxcmd:LoadDisplayCommand FileName="Arena4.gdfx" TargetType="Embedded" TargetName="mainn" />
+                </gwx:GwxPick.CommandParameters>
+              </gwx:GwxPick>
+            </gwx:GwxDynamicGroup.DynamicsList>
+          </gwx:GwxDynamicGroup>
+        </gwx:GwxDynamicGroup.GwxDynamicGroup>
+        <TextBlock Text="ARENA4" />
+      </Label>
+      <Label Background="#00FFFFFF" FontFamily="Microsoft Sans Serif" FontSize="11" Grid.Column="1">
+        <gwx:GwxDynamicGroup.GwxDynamicGroup>
+          <gwx:GwxDynamicGroup>
+            <gwx:GwxDynamicGroup.DynamicsList>
+              <gwx:GwxPick LeftMouseButton="True" ExecuteOnUp="True" InitialClick="True" Control="True">
+                <gwx:GwxPick.CommandParameters>
+                  <gwxcmd:LoadDisplayCommand FileName="Arena1.gdfx" TargetType="Embedded" TargetName="mainn" />
+                </gwx:GwxPick.CommandParameters>
+              </gwx:GwxPick>
+            </gwx:GwxDynamicGroup.DynamicsList>
+          </gwx:GwxDynamicGroup>
+        </gwx:GwxDynamicGroup.GwxDynamicGroup>
+        <TextBlock />
+      </Label>
+    </Grid>
+  </Grid>
+</Grid>

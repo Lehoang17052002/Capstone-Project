@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Grid Background="#FFFFFFFF" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:iwm="clr-namespace:Ico.Windows.Media;assembly=IcoWPF" xmlns:gwx="clr-namespace:Ico.Gwx;assembly=GwxRuntimeCore" xmlns:script="clr-namespace:Ico.Script;assembly=IcoScriptEngine" xmlns:ic="clr-namespace:Ico.Collections;assembly=IcoCollections" xmlns:ig="clr-namespace:Ico.Gdx;assembly=GdxViewControl" xmlns:iws="clr-namespace:Ico.WPF.Specialized;assembly=IcoWPFSpecialized" xmlns:igd="clr-namespace:Ico.Gdx.Data;assembly=GdxClientCommon" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:iwc="clr-namespace:Ico.Windows.Controls;assembly=IcoWPF">
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition />
+  </Grid.ColumnDefinitions>
+  <Grid.RowDefinitions>
+    <RowDefinition />
+  </Grid.RowDefinitions>
+  <Grid.Resources>
+    <BitmapImage x:Key="GwxThumbnailImageKey">
+      <iwm:BitmapImageInfo.StreamSource>
+        <iwm:Base64Stream Data="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" />
+      </iwm:BitmapImageInfo.StreamSource>
+    </BitmapImage>
+  </Grid.Resources>
+  <gwx:GwxDocument.GwxDocument>
+    <gwx:GwxDocument FileVersion="10.97.306.00" ScanRate="500">
+      <gwx:GwxDocument.ScriptCodeManager>
+        <script:ScriptCodeManager>
+          <script:ScriptCodeManager.AssemblyReferences>
+            <ic:AssemblyReference AssemblyName="mscorlib" />
+            <ic:AssemblyReference AssemblyName="System" />
+            <ic:AssemblyReference AssemblyName="System.Core" />
+            <ic:AssemblyReference AssemblyName="System.Data" />
+            <ic:AssemblyReference AssemblyName="System.Xml" />
+            <ic:AssemblyReference AssemblyName="System.Drawing" />
+            <ic:AssemblyReference AssemblyName="System.Windows.Forms" />
+            <ic:AssemblyReference AssemblyName="WindowsBase" />
+            <ic:AssemblyReference AssemblyName="PresentationCore" />
+            <ic:AssemblyReference AssemblyName="PresentationFramework" />
+            <ic:AssemblyReference AssemblyName="GwxRuntimeCore" />
+            <ic:AssemblyReference AssemblyName="GwxRuntimeCoreCommands" />
+            <ic:AssemblyReference AssemblyName="GwxRuntimeViewControl" />
+            <ic:AssemblyReference AssemblyName="GwxConfigCore" />
+            <ic:AssemblyReference AssemblyName="IcoComponentModel" />
+            <ic:AssemblyReference AssemblyName="IcoFwxClientWrapper" />
+            <ic:AssemblyReference AssemblyName="IcoCommonCore.Net" />
+            <ic:AssemblyReference AssemblyName="GdxViewControl" AssemblyCodebase="file:///C:/Program Files/ICONICS/GENESIS64/Components/GdxViewControl.DLL" />
+            <ic:AssemblyReference AssemblyName="IcoWPFSpecialized" AssemblyCodebase="file:///C:/Program Files/ICONICS/GENESIS64/Components/IcoWPFSpecialized.DLL" />
+          </script:ScriptCodeManager.AssemblyReferences>
+        </script:ScriptCodeManager>
+      </gwx:GwxDocument.ScriptCodeManager>
+    </gwx:GwxDocument>
+  </gwx:GwxDocument.GwxDocument>
+  <Grid Background="#00FFFFFF" ClipToBounds="True" Canvas.Left="0" Canvas.Top="0">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition />
+    </Grid.RowDefinitions>
+    <Grid Background="#00FFFFFF" ClipToBounds="True">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="30*" />
+        <RowDefinition Height="609*" />
+      </Grid.RowDefinitions>
+      <Grid Background="#00FFFFFF" ClipToBounds="True">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition />
+        </Grid.RowDefinitions>
+      </Grid>
+      <ig:GdxViewControl FileVersion="10.97.306.00" FontFamily="Segoe UI" FontSize="12" Width="Auto" Height="Auto" Grid.Row="1">
+        <ig:GdxViewControl.SubscriptionsRepository>
+          <igd:GdxSubscription Key="43562719" Name="{x:Null}">
+            <igd:GdxSubscription.Fields>
+              <igd:GdxDataField IsPrimaryKey="True" IsReadOnly="True" Key="id" BuiltInType="Int32" />
+              <igd:GdxDataField Key="username" />
+              <igd:GdxDataField Key="Barcode" />
+              <igd:GdxDataField Key="Tên tài xế" />
+              <igd:GdxDataField Key="Biển số xe" />
+              <igd:GdxDataField Key="Nhiên liệu" />
+              <igd:GdxDataField Key="Loại nhiên liệu" />
+              <igd:GdxDataField Key="Trạm cấp phát" />
+              <igd:GdxDataField Key="executed_at" BuiltInType="DateTime" />
+              <igd:GdxDataField Key="Ngày nhập nhiên liệu" BuiltInType="DateTime" />
+            </igd:GdxSubscription.Fields>
+            <igd:GdxSubscription.Tags>
+              <s:String>db:tt.SELECT_HISTORY</s:String>
+            </igd:GdxSubscription.Tags>
+          </igd:GdxSubscription>
+        </ig:GdxViewControl.SubscriptionsRepository>
+        <ig:GdxViewControl.Items>
+          <iwc:MultipleTabItem IsSelected="True" Header="Tab">
+            <ig:GdxGridView AutoUpdateSeconds="10" SubscriptionID="43562719" Uid="local:GdxView_1">
+              <ig:GdxGridView.Columns>
+                <ig:GdxColumn Key="id" IsVisible="False" Text="id" />
+                <ig:GdxColumn Key="username" Index="1" IsVisible="False" Text="username" />
+                <ig:GdxColumn Key="Barcode" Index="3" Text="Barcode" IsStar="True" />
+                <ig:GdxColumn Key="Tên tài xế" Index="4" Text="Tên tài xế" IsStar="True" />
+                <ig:GdxColumn Key="Biển số xe" Index="5" Text="Biển số xe" IsStar="True" />
+                <ig:GdxColumn Key="Nhiên liệu" Index="6" Text="Nhiên liệu" IsStar="True" />
+                <ig:GdxColumn Key="Loại nhiên liệu" Index="7" Text="Loại nhiên liệu" IsStar="True" />
+                <ig:GdxColumn Key="Trạm cấp phát" Index="8" Text="Trạm cấp phát" IsStar="True" />
+                <ig:GdxColumn Key="executed_at" Index="2" Text="Thời gian tới trạm" IsStar="True" />
+                <ig:GdxColumn Key="Ngày nhập nhiên liệu" Index="9" Format="{x:Null}" Text="Ngày nhập nhiên liệu" />
+              </ig:GdxGridView.Columns>
+            </ig:GdxGridView>
+          </iwc:MultipleTabItem>
+        </ig:GdxViewControl.Items>
+      </ig:GdxViewControl>
+    </Grid>
+  </Grid>
+</Grid>

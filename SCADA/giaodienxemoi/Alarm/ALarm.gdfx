@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Grid Background="#FFFFFFFF" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:iwm="clr-namespace:Ico.Windows.Media;assembly=IcoWPF" xmlns:gwx="clr-namespace:Ico.Gwx;assembly=GwxRuntimeCore" xmlns:script="clr-namespace:Ico.Script;assembly=IcoScriptEngine" xmlns:ic="clr-namespace:Ico.Collections;assembly=IcoCollections" xmlns:gwxcmd="clr-namespace:Ico.Gwx;assembly=GwxRuntimeCoreCommands" xmlns:ig="clr-namespace:Ico.Gwx;assembly=GwxRuntimeViewControl">
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition />
+  </Grid.ColumnDefinitions>
+  <Grid.RowDefinitions>
+    <RowDefinition />
+  </Grid.RowDefinitions>
+  <Grid.Resources>
+    <BitmapImage x:Key="GwxThumbnailImageKey">
+      <iwm:BitmapImageInfo.StreamSource>
+        <iwm:Base64Stream Data="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" />
+      </iwm:BitmapImageInfo.StreamSource>
+    </BitmapImage>
+  </Grid.Resources>
+  <gwx:GwxDocument.GwxDocument>
+    <gwx:GwxDocument FileVersion="10.97.306.00" IsScalable="True" ScanRate="500">
+      <gwx:GwxDocument.ScriptCodeManager>
+        <script:ScriptCodeManager>
+          <script:ScriptCodeManager.AssemblyReferences>
+            <ic:AssemblyReference AssemblyName="mscorlib" />
+            <ic:AssemblyReference AssemblyName="System" />
+            <ic:AssemblyReference AssemblyName="System.Core" />
+            <ic:AssemblyReference AssemblyName="System.Data" />
+            <ic:AssemblyReference AssemblyName="System.Xml" />
+            <ic:AssemblyReference AssemblyName="System.Drawing" />
+            <ic:AssemblyReference AssemblyName="System.Windows.Forms" />
+            <ic:AssemblyReference AssemblyName="WindowsBase" />
+            <ic:AssemblyReference AssemblyName="PresentationCore" />
+            <ic:AssemblyReference AssemblyName="PresentationFramework" />
+            <ic:AssemblyReference AssemblyName="GwxRuntimeCore" />
+            <ic:AssemblyReference AssemblyName="GwxRuntimeCoreCommands" />
+            <ic:AssemblyReference AssemblyName="GwxRuntimeViewControl" />
+            <ic:AssemblyReference AssemblyName="GwxConfigCore" />
+            <ic:AssemblyReference AssemblyName="IcoComponentModel" />
+            <ic:AssemblyReference AssemblyName="IcoFwxClientWrapper" />
+            <ic:AssemblyReference AssemblyName="IcoCommonCore.Net" />
+            <ic:AssemblyReference AssemblyName="GdxViewControl" AssemblyCodebase="file:///C:/Program Files/ICONICS/GENESIS64/Components/GdxViewControl.DLL" />
+            <ic:AssemblyReference AssemblyName="IcoWPFSpecialized" AssemblyCodebase="file:///C:/Program Files/ICONICS/GENESIS64/Components/IcoWPFSpecialized.DLL" />
+            <ic:AssemblyReference AssemblyName="AwxViewControl" AssemblyCodebase="file:///C:/Program Files/ICONICS/GENESIS64/Components/AwxViewControl.DLL" />
+          </script:ScriptCodeManager.AssemblyReferences>
+        </script:ScriptCodeManager>
+      </gwx:GwxDocument.ScriptCodeManager>
+    </gwx:GwxDocument>
+  </gwx:GwxDocument.GwxDocument>
+  <Grid Background="#00FFFFFF" ClipToBounds="True">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="24*" />
+      <RowDefinition Height="585*" />
+    </Grid.RowDefinitions>
+    <Grid Background="#FFF2F2F2" ClipToBounds="True">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition />
+      </Grid.RowDefinitions>
+      <Label FontFamily="Segoe UI" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True">
+        <TextBlock Text="GIAO DIỆN GIÁM SÁT ALARM" />
+      </Label>
+    </Grid>
+    <Grid Background="#FFD8D8D8" ClipToBounds="True" Grid.Row="1">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <Label Background="#00FFFFFF" FontFamily="Segoe UI" FontSize="12" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Name="Label1">
+        <gwx:GwxDynamicGroup.GwxDynamicGroup>
+          <gwx:GwxDynamicGroup>
+            <gwx:GwxDynamicGroup.DynamicsList>
+              <gwx:GwxColor TargetPropertyName="Background" UseEndColor="True" EndBrush="#FF00B0F0" AnimationMode="Discrete" DataSource="localsim::color:String:0:1" DataComparison="OutsideLimitsOrEqualHighLimit" />
+              <gwx:GwxPick LeftMouseButton="True" ExecuteOnUp="True" InitialClick="True" Control="True">
+                <gwx:GwxPick.CommandParameters>
+                  <gwxcmd:LoadDisplayCommand FileName="Alarmrealtime.gdfx" TargetType="Embedded" TargetName="alarm" />
+                </gwx:GwxPick.CommandParameters>
+              </gwx:GwxPick>
+              <gwx:GwxPick LeftMouseButton="True" ExecuteOnUp="True" DataSource="localsim::color:String:0:1" Control="True">
+                <gwx:GwxPick.CommandParameters>
+                  <gwxcmd:WriteValueCommand OnUpValue="1" />
+                </gwx:GwxPick.CommandParameters>
+              </gwx:GwxPick>
+            </gwx:GwxDynamicGroup.DynamicsList>
+          </gwx:GwxDynamicGroup>
+        </gwx:GwxDynamicGroup.GwxDynamicGroup>
+        <TextBlock Text="Realtime" />
+      </Label>
+      <Label Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Segoe UI" FontSize="12" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsTabStop="True" Name="Label2" Grid.Column="1">
+        <gwx:GwxDynamicGroup.GwxDynamicGroup>
+          <gwx:GwxDynamicGroup>
+            <gwx:GwxDynamicGroup.DynamicsList>
+              <gwx:GwxColor TargetPropertyName="Background" UseEndColor="True" EndBrush="#FF00B0F0" AnimationMode="Discrete" DataSource="localsim::color:String:0:1" DataComparison="EqualZero" />
+              <gwx:GwxPick LeftMouseButton="True" ExecuteOnUp="True" DataSource="localsim::color:String:0:1" Control="True">
+                <gwx:GwxPick.CommandParameters>
+                  <gwxcmd:WriteValueCommand OnUpValue="0" />
+                </gwx:GwxPick.CommandParameters>
+              </gwx:GwxPick>
+              <gwx:GwxPick LeftMouseButton="True" ExecuteOnUp="True" Control="True">
+                <gwx:GwxPick.CommandParameters>
+                  <gwxcmd:LoadDisplayCommand FileName="AlarmHistory.gdfx" TargetType="Embedded" TargetName="alarm" />
+                </gwx:GwxPick.CommandParameters>
+              </gwx:GwxPick>
+            </gwx:GwxDynamicGroup.DynamicsList>
+          </gwx:GwxDynamicGroup>
+        </gwx:GwxDynamicGroup.GwxDynamicGroup>
+        <TextBlock Text="History" />
+      </Label>
+    </Grid>
+    <ig:GwxRuntimeViewControl AutoStartRuntime="True" SpecifyScrollBarColors="False" Background="#FFFFFFFF" FontFamily="Segoe UI" FontSize="12" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Name="alarm" Grid.Row="2" />
+  </Grid>
+</Grid>
