@@ -2,11 +2,11 @@
 GIÁM SÁT VÀ VẬN HÀNH HỆ THỐNG TRẠM NHIÊN LIỆU
 # Giới thiệu
 Dự án Capstone này tập trung vào phát triển hệ thống giám sát và điều khiển trạm nhiên liệu sử dụng giao diện người – máy (HMI) và các giao thức truyền thông công nghiệp như Modbus RTU/TCP. Hệ thống cung cấp giải pháp theo dõi và vận hành trạm nhiên liệu hiệu quả, an toàn và trực quan, với các tính năng nổi bật sau:
-  •	Giám sát mức nhiên liệu theo thời gian thực thông qua cảm biến siêu âm và cảm biến áp suất.
-  •	Giao diện người dùng trực quan được thiết kế bằng phần mềm GT Designer3, hiển thị số liệu như: lượng nhiên liệu đang bơm, đã bơm, trạng thái bơm, cảnh báo mức cao/thấp.
-  •	Tích hợp hệ thống SCADA để thu thập dữ liệu, cảnh báo và điều khiển từ xa.
-  •	Phân quyền người dùng, đăng nhập theo vai trò để đảm bảo an toàn vận hành.
-  •	Lưu trữ lịch sử sự kiện và cảnh báo, hỗ trợ truy xuất và đánh giá hiệu suất hệ thống.
+  - Giám sát mức nhiên liệu theo thời gian thực thông qua cảm biến siêu âm và cảm biến áp suất.
+  - Giao diện người dùng trực quan được thiết kế bằng phần mềm GT Designer3, hiển thị số liệu như: lượng nhiên liệu đang bơm, đã bơm, trạng thái bơm, cảnh báo mức cao/thấp.
+  -	Tích hợp hệ thống SCADA để thu thập dữ liệu, cảnh báo và điều khiển từ xa.
+  -	Phân quyền người dùng, đăng nhập theo vai trò để đảm bảo an toàn vận hành.
+  -	Lưu trữ lịch sử sự kiện và cảnh báo, hỗ trợ truy xuất và đánh giá hiệu suất hệ thống.
 
 
 # Thông tin chung 
