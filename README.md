@@ -10,9 +10,8 @@ Dự án Capstone này tập trung vào phát triển hệ thống giám sát v�
 
 
 # Thông tin chung 
-  Đại học Đà Nẵng
-  Trường Đại học Bách Khoa – Đại học Đà Nẵng
-  Khoa Điện
+  ## Trường Đại học Bách Khoa – Đại học Đà Nẵng
+  ## Khoa Điện
   Ngành: Kỹ thuật điều khiển và tự động hóa
   Đề tài: Giám sát và vận hành hệ thống trạm nhiên liệu
   Người hướng dẫn: TS. Nguyễn Thị Thanh Quỳnh 
