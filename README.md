@@ -1,5 +1,5 @@
 # CAPSTONE PROJECT
-GIÁM SÁT VÀ VẬN HÀNH HỆ THỐNG TRẠM NHIÊN LIỆU
+GIÁM SÁT VÀ VẬN HÀNH HỆ THỐNG CÁC TRẠM NHIÊN LIỆU
 # Giới thiệu
 Dự án Capstone này tập trung vào phát triển hệ thống giám sát và điều khiển trạm nhiên liệu sử dụng giao diện người – máy (HMI) và các giao thức truyền thông công nghiệp như Modbus RTU/TCP. Hệ thống cung cấp giải pháp theo dõi và vận hành trạm nhiên liệu hiệu quả, an toàn và trực quan, với các tính năng nổi bật sau:
   - Giám sát mức nhiên liệu theo thời gian thực thông qua cảm biến siêu âm và cảm biến áp suất.
@@ -13,7 +13,7 @@ Dự án Capstone này tập trung vào phát triển hệ thống giám sát v�
     Trường Đại học Bách Khoa – Đại học Đà Nẵng
     Khoa Điện
     Ngành: Kỹ thuật điều khiển và tự động hóa
-    Đề tài: Giám sát và vận hành hệ thống trạm nhiên liệu
+    Đề tài: Giám sát và vận hành hệ thống các trạm nhiên liệu
     Người hướng dẫn: TS. Nguyễn Thị Thanh Quỳnh 
                      KS. Dương Phú Minh Châu
     Sinh viên thực hiện
